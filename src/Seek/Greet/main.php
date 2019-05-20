@@ -6,7 +6,7 @@ use pocketmine\command\Command;
 use pocketmine\command\ComamndSender;
 use pocketmine\plugin\PluginBase;
 
-class Greet extends PluginBase;
+class Main extends PluginBase;
 
 public function onCommand(CommandSender $sender, Command $command, $label, array $args){
     $commandName = $command->getName();
