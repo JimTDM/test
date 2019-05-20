@@ -1,0 +1,9 @@
+name: Greet
+version: 1.0.0
+author: Seek
+api: 3.8.2
+main: Seek\Greet\Greet
+commands:
+  greet:
+    description: Sends back a message
+    usage: /greet 
