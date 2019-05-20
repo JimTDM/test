@@ -5,8 +5,6 @@ namespace Seek\Greet;
 use pocketmine\command\Command;
 use pocketmine\command\ComamndSender;
 use pocketmine\plugin\PluginBase;
-class MyPlugin extends PluginBase{
-}
 
 class Greet extends PluginBase;
 
