@@ -6,7 +6,7 @@ use pocketmine\command\Command;
 use pocketmine\command\ComamndSender;
 use pocketmine\plugin\PluginBase;
 
-class Main extends PluginBase;
+class Greet extends PluginBase;
 
 public function onEnable(){
     }
