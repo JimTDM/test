@@ -1,21 +1,25 @@
 <?php
 
-namespace Seek\Greet;
+namespace Seeker\Greet;
 
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\plugin\PluginBase;
+use pocketmine\Server;
 
 class Greet extends PluginBase{
-
-public function onEnable(){
-    }
-public function onCommand(CommandSender $sender, Command $command, $label, array $args) :bool{
-    $commandName = $command->getName();
-    if($commandName === "greet"){
-      $sender->sendMessage("Hi!");
-      return true;
-    }
-    return false;
-  }
-  }
+    
+public function onEnable(): void{ 
+    
+$this->getServer()->getPluginManager()->registerEvents($this, $this);
+$this->getLogger()->info("enabled");
+}
+public function onCommand(CommandSender $sender, Command $command, $label, array $args): bool{ 
+switch(strowlower($command->getName())){
+case test:
+$sender->sendMessage("Hi!");
+ return true; 
+}
+return false;
+}
+}
